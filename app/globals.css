@@ -1138,3 +1138,102 @@ body{font-family:'Space Grotesk',Inter,sans-serif!important}
   .proof-card { transition: none; }
   .proof-card:hover { transform: none; }
 }
+
+
+/* Mobile navigation repair: keep the menu as an overlay instead of letting it push/overlap page sections. */
+@media (max-width: 900px) {
+  .topbar {
+    position: relative !important;
+    z-index: 40 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    min-width: 0;
+    gap: 8px !important;
+  }
+  .brand { flex: 0 1 auto; min-width: 0; }
+  .top-actions {
+    flex: 0 0 auto;
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center;
+    gap: 7px !important;
+    min-width: 0;
+  }
+  .top-actions [data-testid="rk-connect-button"] {
+    max-width: min(38vw, 170px) !important;
+    min-width: 0 !important;
+  }
+  .top-actions [data-testid="rk-connect-button"] button {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    padding: 9px 11px !important;
+    font-size: 11px !important;
+  }
+  .mobile-toggle {
+    display: grid !important;
+    flex: 0 0 38px;
+    width: 38px !important;
+    height: 38px !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 42;
+    cursor: pointer;
+  }
+  .nav-links,
+  .nav-links.nav-open {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 41 !important;
+    order: initial !important;
+    width: auto !important;
+    max-height: min(70dvh, 480px);
+    overflow-y: auto;
+    margin: 0 !important;
+    padding: 10px !important;
+    border: 1px solid #393939 !important;
+    border-radius: 16px !important;
+    background: rgba(12,12,12,.98) !important;
+    box-shadow: 0 24px 70px rgba(0,0,0,.72) !important;
+    backdrop-filter: blur(18px);
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 3px !important;
+  }
+  .nav-links { display: none !important; }
+  .nav-links.nav-open { display: flex !important; }
+  .nav-links a {
+    display: flex !important;
+    align-items: center;
+    min-height: 43px;
+    width: 100%;
+    padding: 10px 12px !important;
+    border-radius: 10px;
+    font-size: 14px !important;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible {
+    background: #1d1d1d;
+    outline: none;
+  }
+  .nav-active:after { display: none !important; }
+  .orbit-marquee, .buy-token-banner, .hero-workspace, .workspace, .proof-cards, .trust-strip, .network-list {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .site-shell, main, section, article { min-width: 0; }
+  html, body { max-width: 100%; overflow-x: clip; }
+}
+@media (max-width: 420px) {
+  .brand { font-size: 17px !important; letter-spacing: -.6px !important; gap: 5px !important; }
+  .brand-logo { width: 25px !important; height: 25px !important; }
+  .top-actions [data-testid="rk-connect-button"] { max-width: 34vw !important; }
+  .top-actions [data-testid="rk-connect-button"] button { padding: 8px 7px !important; font-size: 10px !important; }
+  .mobile-toggle { width: 34px !important; height: 34px !important; flex-basis: 34px; }
+}
