@@ -86,7 +86,3 @@ This is a starter implementation and should be tested against the exact producti
 - `SUPABASE_SERVICE_ROLE_KEY` must be a server-side service-role/secret key, not an anon/publishable key.
 - New `sb_secret_...` keys are sent as the Supabase `apikey` header only; legacy service-role JWTs are also sent as `Authorization: Bearer ...`.
 - If `/api/transactions` returns 502 in development, inspect the Next.js terminal for the logged Supabase status and error response. Never share the secret key or commit `.env.local`.
-
-
-## OrbitBridge visual direction
-This source uses the Light Monochrome Premium palette and a cinematic OrbitBridge logo reveal. Existing Relay, wallet, swap, bridge, and transaction-history code paths are retained.

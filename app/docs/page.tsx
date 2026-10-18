@@ -6,7 +6,7 @@ import WalletProvider from '@/components/WalletProvider';
 
 function DocsContent() {
   return <main className="site-shell">
-    <header className="topbar"><Link className="brand" href="/" aria-label="OrbitBridge home"><img className="brand-logo" src="/orbitbridge-logo.svg" alt="" aria-hidden="true"/><span>OrbitBridge</span></Link>
+    <header className="topbar"><Link className="brand" href="/" aria-label="OrbitBridge home"><img className="brand-logo" src="/orbitbridge-emblem.png" alt="" aria-hidden="true"/><span>OrbitBridge</span></Link>
       <nav className="nav-links"><Link href="/swap">Swap</Link><Link href="/bridge">Bridge</Link><Link href="/#networks">Networks</Link><Link href="/transactions">Transactions</Link><Link className="nav-active" href="/docs">Docs <ArrowUpRight size={13}/></Link><a className="header-social" href="https://x.com/" target="_blank" rel="noreferrer" aria-label="OrbitBridge on X">𝕏</a></nav><div className="top-actions"><ConnectButton showBalance={false}/></div>
     </header>
     <section className="docs-page">
@@ -19,7 +19,7 @@ function DocsContent() {
       </div>
       <div className="docs-note">OrbitBridge is an interface powered by Relay routing infrastructure. Route availability, supported assets, estimated output, and fees can vary. Always verify the transaction details shown in your wallet before confirming.</div>
     </section>
-    <footer className="footer"><Link className="brand footer-brand" href="/"><img className="brand-logo" src="/orbitbridge-logo.svg" alt="" aria-hidden="true"/><span>OrbitBridge</span></Link><span>Swap &amp; Bridge. <span className="footer-muted">One Click Simple and Rewards.</span></span><div className="footer-links"><Link href="/swap">Swap</Link><Link href="/transactions">Transactions</Link><a href="https://relay.link/" target="_blank" rel="noreferrer">Relay <ArrowUpRight size={12}/></a><Link href="/docs">OrbitBridge Docs <ArrowUpRight size={12}/></Link></div><span className="copyright">© 2026 OrbitBridge</span></footer>
+    <footer className="footer"><Link className="brand footer-brand" href="/"><img className="brand-logo" src="/orbitbridge-emblem.png" alt="" aria-hidden="true"/><span>OrbitBridge</span></Link><span>Swap &amp; Bridge. <span className="footer-muted">One Click Simple and Rewards.</span></span><div className="footer-links"><Link href="/swap">Swap</Link><Link href="/transactions">Transactions</Link><a href="https://relay.link/" target="_blank" rel="noreferrer">Relay <ArrowUpRight size={12}/></a><Link href="/docs">OrbitBridge Docs <ArrowUpRight size={12}/></Link></div><span className="copyright">© 2026 OrbitBridge</span></footer>
   </main>;
 }
 

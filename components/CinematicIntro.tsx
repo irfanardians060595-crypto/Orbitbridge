@@ -56,7 +56,7 @@ export default function CinematicIntro() {
           <span className="intro-logo-ring intro-logo-ring--outer" aria-hidden="true" />
           <span className="intro-logo-ring intro-logo-ring--inner" aria-hidden="true" />
           <img
-            className="intro-globe intro-logo-lockup"
+            className="intro-globe"
             src="/orbitbridge-emblem.png"
             alt="OrbitBridge logo"
             draggable={false}
@@ -66,12 +66,12 @@ export default function CinematicIntro() {
 
         <div className="intro-wordmark">
           <div className="intro-brand-name">Orbit<span>Bridge</span></div>
-          <div className="intro-tagline"><span /> SWAP &amp; BRIDGE · ONE CLICK SIMPLE AND REWARDS <span /></div>
+          <div className="intro-tagline"><span /> SWAP & BRIDGE <span /></div>
         </div>
 
         <div className="intro-bottom">
           <span className="intro-bottom-line" />
-          <span>SWAP&nbsp; · &nbsp;BRIDGE</span>
+          <span>ONE CLICK SIMPLE AND REWARDS</span>
           <span className="intro-bottom-line" />
         </div>
       </div>
