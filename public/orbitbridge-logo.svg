@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="OrbitBridge logo">
+<rect width="128" height="128" rx="28" fill="#171717"/>
+<g fill="none" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M39 35h28c13 0 21 7 21 17S80 69 67 69H39"/>
+ <path d="M39 69h32c14 0 22 7 22 17s-8 17-22 17H39V35"/>
+ <path d="M20 70c9-22 32-38 57-38 12 0 23 3 32 9" stroke-width="3" opacity=".75"/>
+ <path d="M18 83c10 16 29 27 51 27 16 0 31-6 42-17" stroke-width="3" opacity=".75"/>
+</g>
+<path d="M101 20l3.5 8.5L113 32l-8.5 3.5L101 44l-3.5-8.5L89 32l8.5-3.5z" fill="#fff"/>
+</svg>
