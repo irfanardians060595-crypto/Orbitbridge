@@ -5,7 +5,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useBalance, useSendTransaction, useSwitchChain } from 'wagmi';
 import { formatUnits, parseUnits } from 'viem';
 import WalletProvider from '@/components/WalletProvider';
-import { CONTRACT_ADDRESS } from '@/config/contract';
+import { CONTRACT_ADDRESS, BUY_TOKEN_URL } from '@/config/contract';
 import { Chain, Currency, getChains, getCurrencies, getQuote } from '@/lib/relay';
 
 type Quote = any;
@@ -96,7 +96,7 @@ function SwapApp() {
    <div className="buy-token-copy"><span className="eyebrow">ORBITBRIDGE TOKEN</span><h2 id="buy-token-title">Be part of the orbit.</h2><p>Get ready to join the OrbitBridge ecosystem.</p></div>
    <div className="buy-token-action">
     <span className="buy-token-status"><i/> TRADE ON UNISWAP</span>
-    <a className="buy-token-button" href="https://app.uniswap.org/swap" target="_blank" rel="noopener noreferrer">Buy Token <ArrowUpRight size={16}/></a>
+    <a className="buy-token-button" href={BUY_TOKEN_URL} target="_blank" rel="noopener noreferrer">Buy Token <ArrowUpRight size={16}/></a>
    </div>
   </section>
   <section className="feature-section" id="how"><div className="feature-section-heading"><span className="eyebrow">MADE TO MOVE</span><h2>Cross-chain, minus <em>the complication.</em></h2><p>A clearer way to move assets between networks — route, review, then go.</p></div>
